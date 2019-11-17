@@ -3,6 +3,7 @@
   "version": "2.3.1",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
+  "homepage": "https://fyxwanan.github.io/ant-design-pro",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build": "umi build",

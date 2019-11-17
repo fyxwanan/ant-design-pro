@@ -16,6 +16,15 @@ const topColResponsiveProps = {
   style: { marginBottom: 24 },
 };
 
+const threeTopColResponsiveProps = {
+  xs: 24,
+  sm: 12,
+  md: 12,
+  lg: 12,
+  xl: 8,
+  style: { marginBottom: 24 },
+};
+
 const IntroduceRow = memo(({ loading, visitData }) => (
   <Row gutter={24}>
     <Col {...topColResponsiveProps}>
@@ -30,7 +39,7 @@ const IntroduceRow = memo(({ loading, visitData }) => (
           </Tooltip>
         }
         loading={loading}
-        total={() => <Yuan>126560</Yuan>}
+        total={() => <Yuan>123600</Yuan>}
         footer={
           <Field
             label={<FormattedMessage id="app.analysis.day-sales" defaultMessage="Daily Sales" />}
@@ -94,12 +103,12 @@ const IntroduceRow = memo(({ loading, visitData }) => (
                 id="app.analysis.conversion-rate"
                 defaultMessage="Conversion Rate"
               />
-            }
-            value="60%"
-          />
+        }
+        value="60%"
+        />
         }
         contentHeight={46}
-      >
+        >
         <MiniBar data={visitData} />
       </ChartCard>
     </Col>

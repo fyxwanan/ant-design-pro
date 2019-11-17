@@ -2,13 +2,13 @@
 export default {
   // 支持值为 Object 和 Array
   'GET /api/currentUser': {
-    name: 'Serati Ma',
+    name: '小热呀',
     avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
     userid: '00000001',
-    email: 'antdesign@alipay.com',
-    signature: '海纳百川，有容乃大',
-    title: '交互专家',
-    group: '蚂蚁金服－某某某事业群－某某平台部－某某技术部－UED',
+    email: 'xiaoreya@163.com',
+    signature: '你今天有没有喝水？',
+    title: '阴阳师',
+    group: '汉得信息－AMS－燕千云研发项目－知识平台',
     tags: [
       {
         key: '0',
@@ -24,11 +24,11 @@ export default {
       },
       {
         key: '3',
-        label: '大长腿',
+        label: '旅行',
       },
       {
         key: '4',
-        label: '川妹子',
+        label: '湖北汉子',
       },
       {
         key: '5',
@@ -40,41 +40,41 @@ export default {
     country: 'China',
     geographic: {
       province: {
-        label: '浙江省',
+        label: '上海市',
         key: '330000',
       },
       city: {
-        label: '杭州市',
+        label: '青浦区',
         key: '330100',
       },
     },
-    address: '西湖区工专路 77 号',
+    address: '汇联路 33 号',
     phone: '0752-268888888',
   },
   // GET POST 可省略
   'GET /api/users': [
     {
       key: '1',
-      name: 'John Brown',
+      name: '唐文成',
       age: 32,
-      address: 'New York No. 1 Lake Park',
+      address: '平台二组后台',
     },
     {
       key: '2',
-      name: 'Jim Green',
+      name: '庞康华',
       age: 42,
-      address: 'London No. 1 Lake Park',
+      address: '平台二组前端',
     },
     {
       key: '3',
-      name: 'Joe Black',
+      name: '汪华丹',
       age: 32,
-      address: 'Sidney No. 1 Lake Park',
+      address: '眼前云UI设计师',
     },
   ],
   'POST /api/login/account': (req, res) => {
     const { password, userName, type } = req.body;
-    if (password === 'ant.design' && userName === 'admin') {
+    if (password === 'admin' && userName === 'admin') {
       res.send({
         status: 'ok',
         type,
@@ -82,7 +82,7 @@ export default {
       });
       return;
     }
-    if (password === 'ant.design' && userName === 'user') {
+    if (password === 'xiaoreya' && userName === 'xiaoreya') {
       res.send({
         status: 'ok',
         type,

@@ -142,6 +142,7 @@ class UpdateForm extends PureComponent {
             <Select style={{ width: '100%' }}>
               <Option value="0">表一</Option>
               <Option value="1">表二</Option>
+              <Option value="3">表三</Option>
             </Select>
           )}
         </FormItem>,
@@ -186,6 +187,7 @@ class UpdateForm extends PureComponent {
             initialValue: formVals.frequency,
           })(
             <Select style={{ width: '100%' }}>
+              <Option value="month">年</Option>
               <Option value="month">月</Option>
               <Option value="week">周</Option>
             </Select>
